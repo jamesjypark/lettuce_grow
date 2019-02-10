@@ -6,7 +6,7 @@ class UserProfile extends Component {
   render() {
     return  <div className="align-right">
               <h1>Bob</h1>
-              <p><b> 1050 </b> Growth Points</p>
+              <p><b> 50 </b> Friends | <b> 1050 </b> Growth Points</p>
               <h3> Badges </h3>
               <p>🍔 ❤️ 🐶</p>
               <h3> Crops </h3>
