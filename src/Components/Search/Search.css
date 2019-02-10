@@ -1,7 +1,10 @@
 .SearchCards {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
+
+    display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 100%;
+  
 }
 
 .title {
@@ -10,14 +13,18 @@
   font-family: Avenir;
 }
 
+
+
 .TextArea {
-  height: 50px;
+  height: 45px;
   width: 600px;
-  font-size: 40px;
+  padding-top:8px;
+  font-size: 32px;
   resize: none;
   border-radius: 50px;
   outline: none;
-  margin-top: 30px;
+  margin-top: 32px;
+  padding-left: 2vw;
 }
 
 .info {

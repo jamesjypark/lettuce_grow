@@ -4,7 +4,7 @@ import "./SearchCard.css";
 class SearchCard extends Component {
   state = {};
   render() {
-    return <div className="SearchCard">{this.props.content}</div>;
+    return <div className="Parent"><div className="SearchCard">{this.props.content}</div></div>;
   }
 }
 
