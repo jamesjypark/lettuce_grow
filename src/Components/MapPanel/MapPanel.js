@@ -26,20 +26,20 @@ export class MapPanel extends Component {
       this.setState({
         showingInfoWindow: false,
         activeMarker: null
-      });    
+      });
     }
   }
 
   render() {
     return (
-      <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
+      <CurrentLocation centerAroundCurrentLocation tall={this.props.tall} google={this.props.google}>
         {FAKE_COMMUNITIES.communities.map(
           community=>(<Marker onClick={this.onMarkerClick} position={community} name={community.name} members={community.members}/>))}
 
         <InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow} onClose={this.onClose}>
             <CustomWindow name={this.state.selectedPlace.name} members={this.state.selectedPlace.members} />
         </InfoWindow>
-          
+
       </CurrentLocation>
     );
   }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './CurrentLocation.css';
+import './CurrentLocationTall.css';
 
 export class CurrentLocation extends Component {
     constructor(props) {
@@ -27,7 +28,7 @@ export class CurrentLocation extends Component {
     }
 
     recenterMap = () => {
-        
+
         const map = this.map;
         const current = this.state.currentLocation;
 
@@ -95,19 +96,33 @@ export class CurrentLocation extends Component {
            return React.cloneElement(c, {
                map: this.map,
                google: this.props.google
-           }); 
+           });
         });
     }
 
     render() {
+      if(!this.props.tall) {
         return (
-        <div>
-            <div className="mapStyle" ref = "map">
-                Loading Map....
-            </div>        
-            {this.renderChildren()}
-        </div>
+            <div>
+                <div className="mapStyle" ref = "map">
+                    Loading Map....
+                </div>
+                {this.renderChildren()}
+            </div>
+          );
+        } else {
+          return (
+          <div>
+              <div className="mapStyleTall" ref = "map">
+                  Loading Map....
+              </div>
+              {this.renderChildren()}
+          </div>
         );
+        }
+      // } else {
+      //    return <div>nothing</div>
+      // }
     }
 
 }
