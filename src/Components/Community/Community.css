@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Light.woff");
+}
+
 .communityNav {
   border: none;
   padding: 15px 32px;

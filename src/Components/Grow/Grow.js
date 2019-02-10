@@ -8,7 +8,6 @@ class Grow extends Component {
     return (
       <div>
         <PlantPanel />
-        {/* <UserProfile /> */}
       </div>
     );
   }
