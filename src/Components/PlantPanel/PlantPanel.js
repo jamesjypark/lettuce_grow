@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import 'plantPanel.css';
-import './App.css';
+import './plantPanel.css';
 
 class PlantPanel extends Component {
   state = {
