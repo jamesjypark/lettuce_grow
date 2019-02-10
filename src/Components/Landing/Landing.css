@@ -27,10 +27,11 @@
 }
 
 .gif {
-  position: absolute;
+  position: fixed;
   right: 200px;
   top: 350px;
   width: auto;
+  z-index: 100;
   transform: scaleX(0.7);
   transform: scale(3, 4.5);
 }

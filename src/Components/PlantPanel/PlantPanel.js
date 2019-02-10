@@ -114,25 +114,32 @@ class PlantPanel extends Component {
     const { vegetables, isSelected } = this.state;
     return (
       <div class="PlantPanel">
-        {vegetables.map(vegetableName => (
-          <div
-            className={[
-              "PlantProfile",
-              isSelected && vegetableName !== this.state.selectedVegetable
-                ? "hidden"
-                : ""
-            ]
-              .join(" ")
-              .trim()}
-          >
-            <PlantProfile
-              onClick={() => {
-                this.onVegetableClicked(vegetableName);
-              }}
-              vegetable={vegetableName}
-            />
-          </div>
-        ))}
+        {!isSelected && <h1>select your crop</h1>}
+        {isSelected && <h1>your crops </h1>}
+        <div className="vegetableCards">
+          {vegetables.map(vegetableName => (
+            <div
+              className={[
+                "PlantProfile",
+                isSelected && vegetableName !== this.state.selectedVegetable
+                  ? "hidden"
+                  : "",
+                isSelected ? "selected" : ""
+              ]
+                .join(" ")
+                .trim()}
+            >
+              <div>
+                <PlantProfile
+                  onClick={() => {
+                    this.onVegetableClicked(vegetableName);
+                  }}
+                  vegetable={vegetableName}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

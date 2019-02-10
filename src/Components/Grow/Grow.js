@@ -7,9 +7,8 @@ class Grow extends Component {
   render() {
     return (
       <div>
-        Grow <h1>select your crop</h1>
         <PlantPanel />
-        <UserProfile />
+        {/* <UserProfile /> */}
       </div>
     );
   }

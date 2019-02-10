@@ -6,7 +6,7 @@ class PlantProfile extends Component {
   render() {
     const { vegetable } = this.props;
     return (
-      <div className="ProfileCard" onClick={this.props.onClick}>
+      <div onClick={this.props.onClick}>
         <a className="textDecorHidden">
           <p>{vegetable}</p>
           <img src={require("./" + vegetable + ".PNG")} />
