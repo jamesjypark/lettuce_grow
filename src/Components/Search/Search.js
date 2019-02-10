@@ -32,7 +32,7 @@ class Search extends Component {
     const { currentList } = this.state;
     return (
       <div className="Search">
-        <div>search crops</div>
+        <div className="title">search crops</div>
         <textarea ref={this.textArea} onChange={this.onTextAreaChange} />
         <div>6 regional zones 151 vendors 511 crops</div>
         <div className="SearchCards">
