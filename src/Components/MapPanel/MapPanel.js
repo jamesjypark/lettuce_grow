@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
-import './MapPanel.css';
+import './mapPanel.css';
 import '.../Constants/apiKey.js';
 
 const mapStyle = {
