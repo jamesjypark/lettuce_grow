@@ -53,7 +53,7 @@ class Search extends Component {
       <div className="Search">
         <h1 className="title">Search crops</h1>
         <textarea
-          placeholder="Search..."
+          placeholder="Try typing 'tomato'!"
           className="TextArea"
           ref={this.textArea}
           onChange={this.onTextAreaChange}
