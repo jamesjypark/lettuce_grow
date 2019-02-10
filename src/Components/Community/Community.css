@@ -14,5 +14,11 @@
 
 .community_instr {
   text-align:center;
-  max-width: 300px;
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+.community_title {
+  font-family: Avenir;
+  font-size: 50px;
 }

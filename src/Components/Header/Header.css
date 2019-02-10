@@ -3,12 +3,11 @@
   display: flex;
   justify-content: left;
   vertical-align: middle;
-  font-family: Avenir;
 }
 
 .HeaderItem {
-  margin-left: 70px;
-  font-size: 20px;
+  margin-left: 10px;
+  font-size: 36px;
   text-align: center;
 }
 
@@ -27,6 +26,7 @@
 }
 
 #bottom {
+  padding-top: 10px;
   font-weight: bold;
   left: 0;
   height: 70px;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: Avenir;
-  src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Black.woff");
+  src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Light.woff");
 }
 
 .Button {

@@ -8,7 +8,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="Landing">
-        <div className="Subheader">it's thyme to grow.</div>
+        <div className="Subheader">garden a community.</div>
         <div className="Contents">
         Learn, grow and have fun engaging with your
         <br></br>food. Connect with communities and reap the benefits

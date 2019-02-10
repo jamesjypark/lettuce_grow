@@ -9,7 +9,7 @@ class Community extends Component {
     zones: FAKE_DATA.regions,
     growers : FAKE_DATA.growers,
     crops : FAKE_DATA.crops,
-    community: 'Your Community'
+    community: 'find your community'
   }
 
   onCommunitySelected = c => {
@@ -21,7 +21,7 @@ class Community extends Component {
   render() {
       return (
         <div>
-          <div className="communityNav"> <h1>{this.state.community}</h1>
+          <div className="communityNav"> <p className="community_title">{this.state.community + "."}</p>
             <p> <b> {this.state.zones} </b> zones,
                 <b> {this.state.growers} </b> growers,
                 <b> {this.state.crops} </b> crops</p>
