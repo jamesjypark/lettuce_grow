@@ -31,7 +31,6 @@ class App extends Component {
       <div className="App">
         <Header onHeaderSelected={this.onHeaderSelected} />
         <Body content={this.state.currentDisplay} />
-        <MapPanel />
         <Footer />
       </div>
     );
