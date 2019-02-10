@@ -1,0 +1,35 @@
+.Header {
+  margin-top: 80px;
+  display: flex;
+  justify-content: left;
+  vertical-align: middle;
+  font-family: Avenir;
+}
+
+.HeaderItem {
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#logo {
+  display: block;
+  font-size: 35px;
+  text-align: left;
+  line-height: 20px;
+  margin-left: 80px;
+}
+
+#bottom {
+  font-weight: bold;
+  left: 0;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: "../Assets/avenir-lt-std-cufonts-webfont";
+}
+
+/* .logo {
+  top: -500px;
+  transform: scale(0.4);
+} */
