@@ -5,6 +5,8 @@
   background: white;
   font-family: Avenir;
   font-weight: bold;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .Subheader {

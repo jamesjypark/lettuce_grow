@@ -1,10 +1,14 @@
-img {
-    width: 15vw;
-    height: 20vh;
+.img {
+    width: 30vw;
+    height: 30vh;
 }
 
 .textDecorHidden {
     text-decoration: none;
-    width: 40%;
-    height: 40%;
+}
+
+.inline {
+    display: flex;
+    position: absolute;
+    left: 10vw;
 }

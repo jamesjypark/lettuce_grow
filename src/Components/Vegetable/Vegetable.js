@@ -7,11 +7,11 @@ class Vegetable extends Component {
   render() {
     const { vegetable } = this.props;
     return (
-      <div>
-        <a className="textDecorHidden"> 
-            <p>{vegetable}</p>
+      <div className="inline">
+        <a className="textDecorHidden img"> 
           <img src={require("../PlantProfile/" + vegetable + ".PNG")}/>
         </a>
+        <h2>{vegetable}</h2>
       </div>
     );
   }

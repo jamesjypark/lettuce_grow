@@ -53,13 +53,19 @@ class PlantPanel extends Component {
       <div className="parents">
         {vegetable.map(v=>(
           <div>
-          <div onClick={()=>{goToVeggie()}} className={this.state[v] ? "visible" : "hidden"} >
-                    <Vegetable vegetable={v} />
+          <div onClick={()=>{goToVeggie()}}  className={this.state[v] ? "visible" : "hidden"} >
+                    <Vegetable isVeggie={this.state.isVeggie} vegetable={v} />
                     </div>
                 <div onClick={()=>{goToVeggie1(v)}}
                  className={!this.state.isVeggie ? "visible" : "hidden"}>
-              <PlantProfile  vegetable={v}/>
+              <PlantProfile vegetable={v}/>
             </div>
+
+            {this.state.isVeggie && <div onClick={()=>{goToVeggie1(v)}}
+                 className={this.state.isVeggie && !this.state[v] ? "visible under" : "hidden under"}>
+              <PlantProfile vegetable={v}/>
+            </div>}
+
           </div>
         )
         )}

@@ -3,9 +3,7 @@ import Vegetable from '../Vegetable/Vegetable';
 import './PlantProfile.css';
 
 class PlantProfile extends Component {
-    state = {
-        isVeggie: false,
-    }
+    
   render() {
     const { vegetable } = this.props;
     return (
