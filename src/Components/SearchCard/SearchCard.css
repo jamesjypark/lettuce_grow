@@ -5,21 +5,14 @@
 }
 
 .content {
-  padding-top: 10px;
-  font-size: 14px;
-  font-family: Avenir;
-  text-align: center;
-}
-
-.vegetable {
-  margin-right: 10px;
+  padding-top: 20px;
 }
 
 .SearchCard {
   top: 20px;
   left: 0;
   height: 270px;
-  width: 18vw;
+  width: 19vw;
   background: white;
   margin: 10px;
   border-radius: 20px;

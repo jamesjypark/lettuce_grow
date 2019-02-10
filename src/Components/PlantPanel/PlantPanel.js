@@ -107,15 +107,15 @@ class PlantPanel extends Component {
   // }
 
   onVegetableClicked = vegetableName => {
-    this.setState({ isSelected: true, selectedVegetable: vegetableName });
+    this.setState({ isSelected: !this.state.isSelected, selectedVegetable: vegetableName });
   };
 
   render() {
     const { vegetables, isSelected } = this.state;
     return (
       <div class="PlantPanel">
-        {!isSelected && <h1>select your crop</h1>}
-        {isSelected && <h1>your crops </h1>}
+        {!isSelected && <h1>Select your crop</h1>}
+        {isSelected && <h1>Your crops </h1>}
         <div className="vegetableCards">
           {vegetables.map(vegetableName => (
             <div
@@ -131,6 +131,7 @@ class PlantPanel extends Component {
             >
               <div>
                 <PlantProfile
+                  className={isSelected ? "flex1" : "flex0"}
                   onClick={() => {
                     this.onVegetableClicked(vegetableName);
                   }}

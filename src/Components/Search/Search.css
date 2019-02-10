@@ -12,9 +12,9 @@
 }
 
 .title {
-  margin-top: 50px;
-  font-size: 50px;
   font-family: Avenir;
+  margin-top: 8vh !important;
+  font-size: 32px !important;
 }
 
 
