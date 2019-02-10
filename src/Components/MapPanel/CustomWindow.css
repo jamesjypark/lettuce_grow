@@ -1,13 +1,12 @@
 @font-face {
     font-family: Avenir;
-    src: "../Assets/avenir-lt-std-cufonts-webfont";
-}
+    src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-LightOblique.woff");
+  }
 
 .custom_window {
-    display: block;
     width: 350px;
     height: 250px;
-    font-family: Avenir, Arial;
+    font-family: Avenir;
 }
 
 .button:hover {
@@ -16,38 +15,36 @@
 
 .community {
     padding-top: 5px;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
 
 }
 
 .master {
     padding: 20px;
+    display: flex;  
 }
 
 .listitem {
     text-align: left;
-    display: block;
+    display: inline-block; 
+    padding-left: 20px;
 }
 
 .circle {
-    float: left;
     height: 50px;
     width: 50px;
     background-color: #555;
     border-radius: 50%;
-    margin-right: 15px;
 }
 
 .title {
-    font-weight: bold;
-    font-size: 22px;
-    margin-block-start: 2px;  
+    font-size: 24px !important;
+    margin-block-start: 0px !important;
     margin-block-end: 0px;  
 }
 
 .crops {
     margin-block-start: 0px;
     margin-block-end: 0px;
-    font-size: 14px;
 }
