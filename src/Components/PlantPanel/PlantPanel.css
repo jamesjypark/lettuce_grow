@@ -1,19 +1,40 @@
 .parents {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .under {
-    padding-top: 30vh;
+  padding-top: 30vh;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .visible {
-    display:block;
+  display: block;
+}
+
+.PlantPanel {
+  justify-content: center;
+}
+
+.PlantProfile {
+  margin: 30px;
+  width: 260px;
+  height: 220px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px grey;
+}
+
+.vegetableCards {
+  display: flex;
+}
+.selected {
+  /* width: 800px;
+  margin-left: 80px; */
 }
