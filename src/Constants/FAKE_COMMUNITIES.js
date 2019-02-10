@@ -33,7 +33,7 @@ export const FAKE_COMMUNITIES = {
       lng: -123.223688,
       members: ['Bob', 'Frank', 'Sam']
     }, {
-      name : "AvoCardio",
+      name : "Growers Not Showers",
       lat: 49.259729,
       lng: -123.194442,
       members: ['Bob', 'Frank', 'Sam']

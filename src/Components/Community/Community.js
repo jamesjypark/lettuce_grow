@@ -22,10 +22,10 @@ class Community extends Component {
 
     return (
       <div className="communityNav"> <h1> Your Community</h1>
-        <div>Zones: {this.state.zones}
+        <h3>Zones: {this.state.zones}
         | Farmers: {this.state.growers}
-        | Crops: {this.state.crops}</div>
-        //Members: {nameList}
+        | Crops: {this.state.crops}</h3>
+        Members: {nameList}
         <Button content="EXPLORE"/>
       </div>
       );
