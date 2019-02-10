@@ -16,7 +16,7 @@ class Header extends Component {
             onHeaderSelected("community");
           }}
         />
-        <Button
+        <Button 
           content="grow"
           onClick={() => {
             onHeaderSelected("grow");
