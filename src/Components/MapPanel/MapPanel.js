@@ -4,6 +4,7 @@ import { GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
 import { API_KEY } from "../../Constants/apiKey";
 import CurrentLocation from "./CurrentLocation";
 import { FAKE_DATA } from '../../Constants/FAKE_DATA'
+import { FAKE_COMMUNITIES } from '../../Constants/FAKE_COMMUNITIES'
 
 export class MapPanel extends Component {
   state = {
@@ -34,7 +35,7 @@ export class MapPanel extends Component {
       <div>
 
       <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
-        {FAKE_DATA.positions.map(
+        {FAKE_COMMUNITIES.communities.map(
           location=>(<Marker onClick={this.onMarkerClick} position={location} name={location.name} />))}
         <InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow} onClose={this.onClose}>
           <h4>{this.state.selectedPlace.name}</h4>
