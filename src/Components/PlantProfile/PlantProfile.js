@@ -3,7 +3,6 @@ import './PlantProfile.css';
 // import  from "../PlantPanel";
 
 class PlantProfile extends Component {
-
   render() {
     const { vegetable } = this.props;
     return (
