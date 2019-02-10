@@ -1,9 +1,20 @@
+
+@font-face {
+  font-family: Avenir;
+  src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Black.woff");
+}
+
+.content {
+  padding-top: 20px;
+}
+
 .SearchCard {
   top: 0;
   left: 0;
   height: 260px;
   width: 200px;
-  background: grey;
+  border: lightgrey 5px solid;
+  font-family: Avenir;
   margin: 10px;
   border-radius: 10px;
 }
