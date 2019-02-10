@@ -28,4 +28,4 @@ export class MapPanel extends Component {
 
 export default GoogleApiWrapper({
     apiKey: API_KEY
-  })(MapContainer);
+  })(MapPanel);
