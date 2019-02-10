@@ -11,9 +11,9 @@ class PlantPanel extends Component {
   render() {
     return (
       <div>
-        <PlantProfile PlantProfile={this.state.vegetable[0]}/>
-        <PlantProfile PlantProfile={this.state.vegetable[1]}/>
-        <PlantProfile PlantProfile={this.state.vegetable[2]}/>
+        <PlantProfile vegetable={this.state.vegetable[0]}/>
+        <PlantProfile vegetable={this.state.vegetable[1]}/>
+        <PlantProfile vegetable={this.state.vegetable[2]}/>
       </div>
     );
   }
