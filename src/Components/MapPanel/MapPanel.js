@@ -34,7 +34,7 @@ export class MapPanel extends Component {
   render() {
 
     return (
-    <CurrentLocation centerAroundCurrentLocation tall={this.props.tall} google={this.props.google}>
+    <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
         {FAKE_COMMUNITIES.communities.map(
           community=>(<Marker onMouseOver={this.onMouseOver} onClick={this.onMarkerClick} position={community} name={community.name} icon={DotImage} members={community.members}/>))}
 

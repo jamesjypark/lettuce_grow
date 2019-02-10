@@ -101,16 +101,6 @@ export class CurrentLocation extends Component {
     }
 
     render() {
-      if(!this.props.tall) {
-        return (
-            <div>
-                <div className="mapStyle" ref = "map">
-                    Loading Map....
-                </div>
-                {this.renderChildren()}
-            </div>
-          );
-        } else {
           return (
           <div>
               <div className="mapStyleTall" ref = "map">
@@ -119,7 +109,6 @@ export class CurrentLocation extends Component {
               {this.renderChildren()}
           </div>
         );
-        }
       // } else {
       //    return <div>nothing</div>
       // }
