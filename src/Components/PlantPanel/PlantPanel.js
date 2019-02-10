@@ -4,16 +4,19 @@ import './PlantPanel.css';
 
 class PlantPanel extends Component {
   state = {
-    vegetable: ["Tomato", "Potato", "Brocolli"],
     
   }
-  
   render() {
+    
+  const vegetable = ["Tomato", "Potato", "Brocolli", "Spanish"]
     return (
       <div>
-        <PlantProfile vegetable={this.state.vegetable[0]}/>
-        <PlantProfile vegetable={this.state.vegetable[1]}/>
-        <PlantProfile vegetable={this.state.vegetable[2]}/>
+        {vegetable.map(v=>(
+          <PlantProfile vegetable={v}/>
+        )
+        )}
+        
+    
       </div>
     );
   }

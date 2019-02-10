@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-
-const mapStyles = {
-  map: {
-    position: 'absolute',
-    width: '100%',
-    height: '75%'
-  }
-};
+import './Map.css';
 
 export class CurrentLocation extends Component {
     constructor(props) {
         super(props);
-    
         const { lat, lng } = this.props.initialCenter;
         this.state = {
             currentLocation: {
@@ -84,6 +76,8 @@ export class CurrentLocation extends Component {
                 {},
                 {
                     center: center,
+                    fullscreenControl: false,
+                    streetViewControl: false,
                     zoom: zoom
                 }
             );
@@ -93,13 +87,25 @@ export class CurrentLocation extends Component {
         }
     }
 
+    renderChildren() {
+        const { children } = this.props;
+        if(!children) return;
+        return React.Children.map(children, c => {
+           if(!c) return;
+           return React.cloneElement(c, {
+               map: this.map,
+               google: this.props.google
+           }); 
+        });
+    }
+
     render() {
-        const style = Object.assign({}, mapStyles.map);
         return (
         <div>
-            <div style={style} ref = "map">
+            <div className="mapStyle" ref = "map">
                 Loading Map....
             </div>        
+            {this.renderChildren()}
         </div>
         );
     }
@@ -115,6 +121,8 @@ CurrentLocation.defaultProps = {
         lat: 49.2641577,
         lng: -123.2189405
     },
+    fullscreenControl: false,
+    streetViewControl: false,
     centerAroundCurrentLocation: false,
     visible: true
 };
