@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 
 import Community from "../Community/Community";
 import Grow from "../Grow/Grow";
 import Search from "../Search/Search";
 
-=======
->>>>>>> b8c008b57846d2960af44d3bccb5a4cf282d2fbc
 import "./Body.css";
 
 class Body extends Component {
