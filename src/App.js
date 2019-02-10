@@ -3,6 +3,7 @@ import Header from './Components/Header/Header';
 import Body from './Components/Body/Body';
 import Footer from './Components/Footer/Footer';
 import PlantPanel from './Components/PlantPanel/PlantPanel';
+import MapPanel from "./Components/MapPanel/MapPanel";
 import './App.css';
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Body />
+        <MapPanel />
         <PlantPanel />
         <Footer />
       </div>
