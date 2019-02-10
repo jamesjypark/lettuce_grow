@@ -10,7 +10,7 @@ export class MapPanel extends Component {
     showingInfoWindow: false,
     activeMarker: {},
     selectedPlace: {}
-  };s
+  };
 
   onMarkerClick = (props, marker, e) => {
     this.setState({
