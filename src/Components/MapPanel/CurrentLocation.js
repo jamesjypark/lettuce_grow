@@ -2,18 +2,9 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './Map.css';
 
-const mapStyles = {
-  map: {
-    position: 'absolute',
-    width: '100%',
-    height: '75%'
-  }
-};
-
 export class CurrentLocation extends Component {
     constructor(props) {
         super(props);
-    
         const { lat, lng } = this.props.initialCenter;
         this.state = {
             currentLocation: {
@@ -85,6 +76,7 @@ export class CurrentLocation extends Component {
                 {},
                 {
                     center: center,
+                    streetViewControl: false,
                     zoom: zoom
                 }
             );
@@ -115,6 +107,7 @@ CurrentLocation.defaultProps = {
         lat: 49.2641577,
         lng: -123.2189405
     },
+    streetViewControl: false,
     centerAroundCurrentLocation: false,
     visible: true
 };
