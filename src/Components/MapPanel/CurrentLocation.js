@@ -87,12 +87,25 @@ export class CurrentLocation extends Component {
         }
     }
 
+    renderChildren() {
+        const { children } = this.props;
+        if(!children) return;
+        return React.Children.map(children, c => {
+           if(!c) return;
+           return React.cloneElement(c, {
+               map: this.map,
+               google: this.props.google
+           }); 
+        });
+    }
+
     render() {
         return (
         <div>
             <div className="mapStyle" ref = "map">
                 Loading Map....
             </div>        
+            {this.renderChildren()}
         </div>
         );
     }
