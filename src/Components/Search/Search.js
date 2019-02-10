@@ -7,12 +7,22 @@ class Search extends Component {
     super(props);
     this.state = {
       defaultList: [
-        "carrots",
-        "cabbages",
-        "tomatoes",
-        "lettuce",
-        "potatoes",
-        "thymes"
+        "Carrots",
+        "Cabbages",
+        "Tomatoes",
+        "Lettuce",
+        "Potatoes",
+        "Thymes",
+        "Green Onions",
+        "Blueberries",
+        "Raspeberries",
+        "Pineapples",
+        "Coconuts",
+        "Pumkins",
+        "Coffee Beans",
+        "Cocoa",
+        "Onions",
+        "Red Onions"
       ],
       currentList: []
     };
@@ -22,7 +32,7 @@ class Search extends Component {
     const { defaultList, currentList } = this.state;
     let newList = [];
     for (let i = 0; i < defaultList.length; i++) {
-      if (defaultList[i].includes(e.target.value)) {
+      if (defaultList[i].toLowerCase().includes(e.target.value.toLowerCase())) {
         newList.push(defaultList[i]);
       }
     }
@@ -35,8 +45,9 @@ class Search extends Component {
     const { currentList } = this.state;
     return (
       <div className="Search">
-        <div className="title">search crops</div>
+        <div className="title">Search crops</div>
         <textarea
+          placeholder="Search..."
           className="TextArea"
           ref={this.textArea}
           onChange={this.onTextAreaChange}
