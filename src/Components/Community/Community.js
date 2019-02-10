@@ -8,13 +8,18 @@ class Community extends Component {
     crops : FAKE_DATA.crops
   }
   render() {
+//     const arrayNames = [];
+//     const nameList = FAKE_DATA.users.map(user.name=>{arrayNames.push(user.name)})
+// //         {listItems.users.map(name=>(<div>{name}</div>))}
+
     return (
       <div> Your Community
         <div>Zones: {this.state.zones}
         | Farmers: {this.state.growers}
         | Crops: {this.state.crops}</div>
+        {FAKE_DATA.users[0].name}
       </div>
-    );
+      );
   }
 }
 
