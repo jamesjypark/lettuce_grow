@@ -15,8 +15,9 @@
 
 .flex0 {
     flex-grow: 0;
-}
-
-.flex1 {
-    flex-grow: 1;
-}
+  }
+  
+  .flex1 {
+    float: left;
+    justify-content: left;
+  }
