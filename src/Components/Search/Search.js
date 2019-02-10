@@ -7,6 +7,7 @@ class Search extends Component {
     super(props);
     this.state = {
       defaultList: [
+        /*
         "Carrots",
         "Cabbages",
         "Tomatoes",
@@ -23,6 +24,11 @@ class Search extends Component {
         "Cocoa",
         "Onions",
         "Red Onions"
+        */
+       "Broccoli",
+       "Potato",
+       "Spinach",
+       "Tomato"
       ],
       currentList: []
     };
@@ -52,7 +58,7 @@ class Search extends Component {
           ref={this.textArea}
           onChange={this.onTextAreaChange}
         />
-        <div className="info">6 regional zones 151 vendors 511 crops</div>
+        <div className="info"><b>6</b> regional zones <b>151</b> vendors <b>511</b> crops</div>
         <div className="SearchCards">
           {currentList.map(card => (
             <SearchCard key={card} content={card} />
