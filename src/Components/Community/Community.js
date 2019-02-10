@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { FAKE_DATA } from "../../Constants/FAKE_DATA";
+import './Community.css';
+import Button from "../Button/Button";
+
 
 class Community extends Component {
   state = {
@@ -18,11 +21,12 @@ class Community extends Component {
 );
 
     return (
-      <div> Your Community
+      <div className="communityNav"> <h1> Your Community</h1>
         <div>Zones: {this.state.zones}
         | Farmers: {this.state.growers}
         | Crops: {this.state.crops}</div>
-        Members: {nameList}
+        //Members: {nameList}
+        <Button content="EXPLORE"/>
       </div>
       );
   }
