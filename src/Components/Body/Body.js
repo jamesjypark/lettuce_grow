@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./body.css";
+import "./Body.css";
 
 class Body extends Component {
   render() {

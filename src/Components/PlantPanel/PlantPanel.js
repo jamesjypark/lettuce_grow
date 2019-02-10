@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import './plantPanel.css';
+import PlantProfile from '../PlantProfile/PlantProfile';
+import './PlantPanel.css';
 
 class PlantPanel extends Component {
   state = {
-    vegetable: "vegetable",
+    vegetable: ["Tomato", "Potato", "Brocolli"],
     
   }
   
   render() {
     return (
       <div>
-        <a>
-          <img src={this.state.vegetable}></img>
-        </a>
+        <PlantProfile PlantProfile={this.state.vegetable[0]}/>
+        <PlantProfile PlantProfile={this.state.vegetable[1]}/>
+        <PlantProfile PlantProfile={this.state.vegetable[2]}/>
       </div>
     );
   }
