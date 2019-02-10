@@ -115,7 +115,7 @@ class PlantPanel extends Component {
     return (
       <div class="PlantPanel">
         {!isSelected && <h1>Select your crop</h1>}
-        {isSelected && <h1>Your crops </h1>}
+        {isSelected && <p class="style_p">My Crops </p>}
         <div className="vegetableCards">
           {vegetables.map(vegetableName => (
             <div
@@ -136,6 +136,8 @@ class PlantPanel extends Component {
                     this.onVegetableClicked(vegetableName);
                   }}
                   vegetable={vegetableName}
+
+                  selected={this.state.isSelected}
                 />
               </div>
             </div>

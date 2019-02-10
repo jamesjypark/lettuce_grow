@@ -3,13 +3,29 @@ import Vegetable from "../Vegetable/Vegetable";
 import "./PlantProfile.css";
 
 class PlantProfile extends Component {
+
+  renderPlantInfo = (vegetable, selected) => {
+    if(selected) {
+      return (<div className = "more_info">
+                <p className = "title">{vegetable}</p>
+                <p>planted: <b>19 days ago</b></p>
+                <p>stage: <b>young</b></p>
+              </div>);
+    }
+    return (<div className="info"><p className="title">{vegetable}</p></div>);
+  }
+
   render() {
-    const { vegetable } = this.props;
+    const {vegetable} = this.props;
     return (
       <div onClick={this.props.onClick}>
         <a className="textDecorHidden">
-          <p>{vegetable}</p>
-          <img src={require("./" + vegetable + ".PNG")} />
+          <div>
+              <div>
+                <img className = "vegetable" src={require("./" + vegetable + ".PNG")} />
+              </div>
+              {this.renderPlantInfo(vegetable, this.props.selected)}
+          </div>
         </a>
       </div>
     );

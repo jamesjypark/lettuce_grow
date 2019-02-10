@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Black.woff");
+}
+
 .textDecorHidden {
   text-decoration: none;
   width: 40%;
@@ -9,4 +14,19 @@ img {
   max-height: 80;
   width: 15vw;
   height: 20vh;
+}
+
+.vegetable {
+  float: left;
+}
+
+.info {
+  font-family: Avenir;
+  padding-top: 20px;
+}
+
+.more_info {
+  font-family: Avenir;
+  text-align: left;
+  padding-right: 10px;
 }

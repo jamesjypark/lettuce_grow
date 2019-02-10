@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Black.woff");
+}
+
+div {
+  font-family: Avenir;
+}
+
 .parents {
   display: flex;
   justify-content: space-between;
@@ -11,7 +20,6 @@
 }
 
 .parentDiv{
-  display: flex;
   height: 100%;
 }
 
@@ -41,12 +49,17 @@
 .vegetableCards {
   display: flex;
 }
+
 .selected {
-  /* width: 800px;
-  margin-left: 80px; */
-    flex-grow: 1;
-    width: 500%;
+    width: 40%;
     float: left;
+}
+
+.style_p {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 20px;
+  margin-block-end: 0px;
 }
 
 .flex0 {
