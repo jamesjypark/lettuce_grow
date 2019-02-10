@@ -8,7 +8,7 @@ class AddButton extends Component {
 
     render() {
         return <button className="AddButton"
-                    onClick={this.props.onClick}>
+                    onClick={() => {console.log("clicked!");}}>
             </button>;
 
     }

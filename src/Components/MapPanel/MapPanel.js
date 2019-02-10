@@ -37,8 +37,7 @@ export class MapPanel extends Component {
     <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
         {FAKE_COMMUNITIES.communities.map(
           community=>(<Marker onMouseOver={this.onMouseOver} onClick={this.onMarkerClick} position={community} name={community.name} icon={DotImage} members={community.members}/>))}
-
-        <InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow} onClose={this.onClose}>
+        <InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow} onClose={this.onClose} >
             <CustomWindow name={this.state.selectedPlace.name} members={this.state.selectedPlace.members} onCommunitySelect={this.props.onCommunitySelected}  />
         </InfoWindow>
 
