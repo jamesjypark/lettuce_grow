@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '../Button/Button';
 import './header.css';
 
 class Header extends Component {
@@ -9,7 +10,10 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <p>Header text</p>
+        <h1> Lettuce Grow</h1>
+        <Button />
+        <Button />
+        <Button />  
       </div>
     );
   }

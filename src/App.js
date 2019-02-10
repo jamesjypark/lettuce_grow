@@ -9,9 +9,24 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isLandingPage: true,
+      isSearchPage: false,
+      selectCropsPage: false,
+      isResultPage: false,
+      isFindingCommunityPage: false,
+      
     };
   }
+
   render() {
+    const changeAccord = string => {
+   
+      if (string === "Search") {
+        this.setState({isSearchPage: true})
+      } else if (string === "") {
+
+      }
+    }
     return (
       <div className="App">
         <Header />

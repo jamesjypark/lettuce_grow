@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class button extends Component {
+class Button extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,11 +10,11 @@ class button extends Component {
   }
   render() {
     return (
-      <button
-        onClick={() => this.props.onClick()}
-      >
-        {this.props.value }
+      <button onClick={() => this.props.onClick()}>
+        {this.props.value}
       </button>
     );
   }
 }
+
+export default Button;
