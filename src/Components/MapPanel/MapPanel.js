@@ -8,7 +8,6 @@ export class MapPanel extends Component {
   render() {
     return (
       <CurrentLocation 
-      streetViewControl
       centerAroundCurrentLocation 
       google={this.props.google} />
     );

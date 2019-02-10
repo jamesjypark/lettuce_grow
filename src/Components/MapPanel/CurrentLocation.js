@@ -76,6 +76,7 @@ export class CurrentLocation extends Component {
                 {},
                 {
                     center: center,
+                    fullscreenControl: false,
                     streetViewControl: false,
                     zoom: zoom
                 }
@@ -107,6 +108,7 @@ CurrentLocation.defaultProps = {
         lat: 49.2641577,
         lng: -123.2189405
     },
+    fullscreenControl: false,
     streetViewControl: false,
     centerAroundCurrentLocation: false,
     visible: true
