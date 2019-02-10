@@ -24,6 +24,17 @@ class Community extends Component {
         <MapPanel />
         </div>
         );
+    } else {
+      return (
+        <div className="communityNav"> <h1> Your Community</h1>
+          <p> <b> {this.state.zones} </b> zones,
+              <b> {this.state.growers} </b> growers,
+              <b> {this.state.crops} </b> crops</p>
+              <h5>The Top Grower is Brandon!</h5>
+          <MapPanel tall={this.state.tall}/>
+        </div>
+        );
+    }
   }
 }
 

@@ -28,3 +28,12 @@
   font-family: Avenir;
   src: "../Assets/avenir-lt-std-cufonts-webfont";
 }
+
+.Button{
+  font-family: Avenir;
+}
+
+/* .logo {
+  top: -500px;
+  transform: scale(0.4);
+} */
