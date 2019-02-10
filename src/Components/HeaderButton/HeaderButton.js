@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import "./HeaderButton.css";
 
 class HeaderButton extends Component {
   render() {
     return (
-      <div onClick={this.props.onClick} className="HeaderButton">
+      <button onClick={this.props.onClick} className="HeaderButton">
         {this.props.content}
-      </div>
+      </button>
     );
   }
 }
