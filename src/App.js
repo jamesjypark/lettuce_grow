@@ -6,10 +6,14 @@ import PlantPanel from './Components/PlantPanel/PlantPanel';
 import './App.css';
 
 class App extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+    };
+  }
   render() {
     return (
-      <div>
+      <div className="App">
         <Header />
         <Body />
         <PlantPanel />
@@ -18,4 +22,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;
