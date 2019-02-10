@@ -10,6 +10,11 @@
   padding-top: 30vh;
 }
 
+.parentDiv{
+  display: flex;
+  height: 100%;
+}
+
 .hidden {
   display: none;
 }
@@ -20,6 +25,8 @@
 
 .PlantPanel {
   justify-content: center;
+  margin-top: 25px;
+  padding: 15px 32px;
 }
 
 .PlantProfile {
