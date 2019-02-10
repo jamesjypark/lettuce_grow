@@ -11,7 +11,7 @@ export const FAKE_COMMUNITIES = {
       name: "Rooting For You",
       lat: 49.264515,
       lng: -123.258075,
-      members: ['Bob', 'Frank', 'Sam']
+      members: [FAKE_DATA.users[3], FAKE_DATA.users[4],  FAKE_DATA.users[0]]
     }, {
       name: "Raisin The Bar",
       lat: 49.264162,

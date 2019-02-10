@@ -63,7 +63,7 @@ export const FAKE_DATA = {
       ]
     },
     {
-      name: "Jia Xin",
+      name: "Xin Jia",
       farmType: "House",
       region: "A Fun Thyme",
       crops: [
