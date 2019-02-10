@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import "./CustomWindow.css";
+import "../Button/AddButton";
+import AddButton from "../Button/AddButton";
 
 export class CustomWindow extends Component {
     constructor(props) {
@@ -12,10 +14,16 @@ export class CustomWindow extends Component {
         return cropString.join(", ");
     }
 
+    onClick= () => { 
+        const { onCommunitySelected } = this.props;
+        console.log('clicked!');
+        onCommunitySelected(this.props.name); 
+    }
+
     render() {
         return (<div className="custom_window">
-            <div className="header">    
-                <button className="button"></button>
+            <div>    
+                <AddButton onClick={this.onClick} />
                 <p className="community">{'"' + this.props.name + '"' + " Community"}</p>
             </div>
             {this.props.members && this.props.members.map(member => (
