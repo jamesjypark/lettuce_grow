@@ -9,7 +9,7 @@ class PlantProfile extends Component {
       <div>
         <a>
             {vegetable}
-          <img src={vegetable + "png"}></img>
+          <img src={vegetable + ".png"}></img>
         </a>
       </div>
     );
