@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Button from "../Button/Button";
+import HeaderButton from "../HeaderButton/HeaderButton";
 
 import logo from "../../Constants/logo.png";
 import "./Header.css";
@@ -21,7 +21,7 @@ class Header extends Component {
           <div id="bottom">grow</div>
         </div>
         <div className="HeaderItem">
-          <Button
+          <HeaderButton
             content="community"
             onClick={() => {
               onHeaderSelected("community");
@@ -29,7 +29,7 @@ class Header extends Component {
           />
         </div>
         <div className="HeaderItem">
-          <Button
+          <HeaderButton
             content="grow"
             onClick={() => {
               onHeaderSelected("grow");
@@ -37,7 +37,7 @@ class Header extends Component {
           />
         </div>
         <div className="HeaderItem">
-          <Button
+          <HeaderButton
             content="search"
             onClick={() => {
               onHeaderSelected("search");
