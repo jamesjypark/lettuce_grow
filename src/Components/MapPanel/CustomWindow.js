@@ -14,7 +14,7 @@ export class CustomWindow extends Component {
         return cropString.join(", ");
     }
 
-    onClick= () => { 
+    onClick = () => { 
         const { onCommunitySelected } = this.props;
         console.log('clicked!');
         onCommunitySelected(this.props.name); 
