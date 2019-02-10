@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Community from "../Community/Community";
 import Grow from "../Grow/Grow";
 import Search from "../Search/Search";
-
+import MapPanel from "../MapPanel/MapPanel";
 import "./Body.css";
 
 class Body extends Component {
@@ -12,6 +12,7 @@ class Body extends Component {
       <div>
          <div className={this.props.content === "community" ? "" : "hidden"}>
            <Community />
+           <MapPanel />
          </div>
          <div className={this.props.content === "grow" ? "" : "hidden"}>
            <Grow />
