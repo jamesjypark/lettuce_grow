@@ -1,8 +1,31 @@
 .SearchCards {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .title {
+  margin-top: 50px;
   font-size: 50px;
+  font-family: Avenir;
+}
+
+.TextArea {
+  height: 50px;
+  width: 600px;
+  font-size: 40px;
+  resize: none;
+  border-radius: 50px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.info {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: "../Assets/avenir-lt-std-cufonts-webfont";
 }

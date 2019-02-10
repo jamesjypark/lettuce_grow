@@ -1,8 +1,9 @@
 .SearchCard {
   top: 0;
   left: 0;
-  height: 100px;
-  width: 100px;
-  background: red;
+  height: 260px;
+  width: 200px;
+  background: grey;
   margin: 10px;
+  border-radius: 10px;
 }

@@ -22,6 +22,7 @@
 #bottom {
   font-weight: bold;
   left: 0;
+  height: 70px;
 }
 
 @font-face {
@@ -29,7 +30,7 @@
   src: "../Assets/avenir-lt-std-cufonts-webfont";
 }
 
-.Button{
+.Button {
   font-family: Avenir;
 }
 

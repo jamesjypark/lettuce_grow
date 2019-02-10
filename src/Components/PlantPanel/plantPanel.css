@@ -1,19 +1,28 @@
 .parents {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .under {
-    padding-top: 30vh;
+  padding-top: 30vh;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .visible {
-    display:block;
+  display: block;
+}
+
+.PlantPanel {
+  justify-content: center;
+  display: flex;
+}
+
+.PlantProfile {
+  margin: 30px;
 }

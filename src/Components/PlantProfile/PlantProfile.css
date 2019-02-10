@@ -1,15 +1,20 @@
 .textDecorHidden {
-    text-decoration: none;
-    width: 40%;
-    height: 40%;
+  text-decoration: none;
+  width: 40%;
+  height: 40%;
 }
 
-
-  
+.ProfileCard {
+  height: 250px;
+  width: 270px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 1.5px grey;
+}
 
 img {
-    max-width: 80%;
-    max-height: 80;
-    width: 15vw;
-    height: 20vh;
+  max-width: 80%;
+  max-height: 80;
+  width: 15vw;
+  height: 20vh;
 }
