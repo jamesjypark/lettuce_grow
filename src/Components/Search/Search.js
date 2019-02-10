@@ -7,12 +7,28 @@ class Search extends Component {
     super(props);
     this.state = {
       defaultList: [
-        "carrots",
-        "cabbages",
-        "tomatoes",
-        "lettuce",
-        "potatoes",
-        "thymes"
+        /*
+        "Carrots",
+        "Cabbages",
+        "Tomatoes",
+        "Lettuce",
+        "Potatoes",
+        "Thymes",
+        "Green Onions",
+        "Blueberries",
+        "Raspeberries",
+        "Pineapples",
+        "Coconuts",
+        "Pumkins",
+        "Coffee Beans",
+        "Cocoa",
+        "Onions",
+        "Red Onions"
+        */
+       "Broccoli",
+       "Potato",
+       "Spinach",
+       "Tomato"
       ],
       currentList: []
     };
@@ -22,7 +38,7 @@ class Search extends Component {
     const { defaultList, currentList } = this.state;
     let newList = [];
     for (let i = 0; i < defaultList.length; i++) {
-      if (defaultList[i].includes(e.target.value)) {
+      if (defaultList[i].toLowerCase().includes(e.target.value.toLowerCase())) {
         newList.push(defaultList[i]);
       }
     }
@@ -35,13 +51,14 @@ class Search extends Component {
     const { currentList } = this.state;
     return (
       <div className="Search">
-        <div className="title">search crops</div>
+        <h1 className="title">Search crops</h1>
         <textarea
+          placeholder="Try typing 'tomato'!"
           className="TextArea"
           ref={this.textArea}
           onChange={this.onTextAreaChange}
         />
-        <div className="info">6 regional zones 151 vendors 511 crops</div>
+        <div className="info"><b>6</b> regional zones <b>151</b> vendors <b>511</b> crops</div>
         <div className="SearchCards">
           {currentList.map(card => (
             <SearchCard key={card} content={card} />

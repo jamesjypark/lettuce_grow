@@ -1,9 +1,29 @@
-.SearchCard {
-  top: 0;
-  left: 0;
-  height: 260px;
-  width: 200px;
-  background: grey;
-  margin: 10px;
-  border-radius: 10px;
+
+@font-face {
+  font-family: Avenir;
+  src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Black.woff");
 }
+
+.content {
+  padding-top: 20px;
+}
+
+.SearchCard {
+  top: 20px;
+  left: 0;
+  height: 270px;
+  width: 19vw;
+  background: white;
+  margin: 10px;
+  border-radius: 20px;
+  border: solid;
+  border-width: 8px;
+  border-color: grey;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+

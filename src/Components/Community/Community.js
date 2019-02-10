@@ -9,7 +9,7 @@ class Community extends Component {
     zones: FAKE_DATA.regions,
     growers : FAKE_DATA.growers,
     crops : FAKE_DATA.crops,
-    community: 'Select a Community'
+    community: 'Your Community'
   }
 
   onCommunitySelected = c => {
@@ -25,7 +25,7 @@ class Community extends Component {
             <p> <b> {this.state.zones} </b> zones,
                 <b> {this.state.growers} </b> growers,
                 <b> {this.state.crops} </b> crops</p>
-                <h5>The Top Grower is Brandon!</h5>
+                <p className="community_instr">Browse communities by clicking on one of the blue markers on the map.</p>
           </div>
         <MapPanel onCommunitySelected={this.onCommunitySelected}/>
         </div>

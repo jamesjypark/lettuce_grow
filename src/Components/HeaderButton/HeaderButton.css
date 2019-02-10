@@ -10,9 +10,15 @@
 
 .HeaderButton:hover {
   background-color:lightgray;
+  color: darkgreen;
   border: none;
   opacity: 1;
   transition: 0.3s;
+}
+
+.HeaderButton:focus {
+  color: green;
+  outline:0;
 }
 
 @font-face {

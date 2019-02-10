@@ -21,6 +21,11 @@
   margin-left: 80px;
 }
 
+#logo:hover {
+  color:lightgreen;
+  transition: 0.3s;
+}
+
 #bottom {
   font-weight: bold;
   left: 0;
