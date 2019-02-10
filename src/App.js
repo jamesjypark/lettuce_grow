@@ -31,11 +31,11 @@ class App extends Component {
       <div className="App">
       <div>This is sample </div>
 
-        // <Header onHeaderSelected={this.onHeaderSelected} />
-        // <Body content={this.state.currentDisplay} />
-        // <MapPanel />
-        // <PlantPanel />
-        // <Footer />
+        <Header onHeaderSelected={this.onHeaderSelected} />
+        <Body content={this.state.currentDisplay} />
+        <MapPanel />
+        <PlantPanel />
+        <Footer />
       </div>
     );
   }
