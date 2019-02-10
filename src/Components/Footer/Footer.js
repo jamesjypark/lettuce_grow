@@ -3,7 +3,7 @@ import './Footer.css';
 
 class Footer extends Component {
   state = {
-    
+
   }
 
   render() {

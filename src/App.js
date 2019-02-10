@@ -29,11 +29,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header onHeaderSelected={this.onHeaderSelected} />
-        <Body content={this.state.currentDisplay} />
-        <MapPanel />
-        <PlantPanel />
-        <Footer />
+      <div>This is sample </div>
+
+        // <Header onHeaderSelected={this.onHeaderSelected} />
+        // <Body content={this.state.currentDisplay} />
+        // <MapPanel />
+        // <PlantPanel />
+        // <Footer />
       </div>
     );
   }
