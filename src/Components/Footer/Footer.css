@@ -3,6 +3,8 @@
     font-family: Avenir;
     src: "../Assets/avenir-lt-std-cufonts-webfont";
 }
+    src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-Black.woff");
+  }
 
 .footer {
     position:fixed;
