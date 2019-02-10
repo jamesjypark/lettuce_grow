@@ -6,3 +6,6 @@
     border-radius: 50%;
     margin-right: 15px;
 }
+.align-right {
+  float: right;
+}

@@ -4,7 +4,7 @@ import Leaderboard from "../Leaderboard/Leaderboard";
 
 class UserProfile extends Component {
   render() {
-    return  <div>
+    return  <div className="align-right">
               <h1>Bob</h1>
               <p><b> 1050 </b> Growth Points</p>
               <h3> Badges </h3>

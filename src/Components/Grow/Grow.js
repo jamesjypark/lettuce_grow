@@ -7,8 +7,7 @@ import UserProfile from "../UserProfile/UserProfile";
 class Grow extends Component {
   render() {
     return <div>Grow <h1>Select Your Crops.</h1>
-                <PlantPanel />
-                <UserProfile /></div>;
+                <PlantPanel /></div>;
   }
 }
 
