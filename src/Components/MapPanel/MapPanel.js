@@ -3,14 +3,15 @@ import { GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
 // import "./MapPanel.css";
 import { API_KEY } from "../../Constants/apiKey";
 import CurrentLocation from "./CurrentLocation";
-import { FAKE_DATA } from '../../Constants/FAKE_DATA'
+import CustomWindow from "./CustomWindow";
+import { FAKE_COMMUNITIES } from '../../Constants/FAKE_COMMUNITIES'
 
 export class MapPanel extends Component {
   state = {
     showingInfoWindow: false,
     activeMarker: {},
     selectedPlace: {}
-  };s
+  };
 
   onMarkerClick = (props, marker, e) => {
     this.setState({
@@ -25,22 +26,21 @@ export class MapPanel extends Component {
       this.setState({
         showingInfoWindow: false,
         activeMarker: null
-      });
+      });    
     }
   }
 
   render() {
     return (
-      <div>
-
       <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
-        {FAKE_DATA.positions.map(
-          location=>(<Marker onClick={this.onMarkerClick} position={location} name={location.name} />))}
+        {FAKE_COMMUNITIES.communities.map(
+          community=>(<Marker onClick={this.onMarkerClick} position={community} name={community.name} members={community.members}/>))}
+
         <InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow} onClose={this.onClose}>
-          <h4>{this.state.selectedPlace.name}</h4>
+            <CustomWindow name={this.state.selectedPlace.name} members={this.state.selectedPlace.members} />
         </InfoWindow>
+          
       </CurrentLocation>
-      </div>
     );
   }
 }

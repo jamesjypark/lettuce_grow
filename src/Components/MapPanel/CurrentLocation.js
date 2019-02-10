@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import './Map.css';
+import './CurrentLocation.css';
 
 export class CurrentLocation extends Component {
     constructor(props) {
