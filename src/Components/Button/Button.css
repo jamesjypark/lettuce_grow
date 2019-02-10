@@ -14,3 +14,12 @@
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+.AddButton {
+  background:url(../../Assets/plus_icon.png);
+  width: 32px;
+  height: 32px;
+  float:right;
+  margin-right: 15px;
+  border: none;
+}

@@ -18,7 +18,7 @@ export class MapPanel extends Component {
     this.setState({
       selectedPlace: props,
       activeMarker: marker,
-      showingInfoWindow: true,
+      showingInfoWindow: true
     });
   }
 
@@ -39,7 +39,7 @@ export class MapPanel extends Component {
           community=>(<Marker onMouseOver={this.onMouseOver} onClick={this.onMarkerClick} position={community} name={community.name} icon={DotImage} members={community.members}/>))}
 
         <InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow} onClose={this.onClose}>
-            <CustomWindow name={this.state.selectedPlace.name} members={this.state.selectedPlace.members} />
+            <CustomWindow name={this.state.selectedPlace.name} members={this.state.selectedPlace.members} onCommunitySelect={this.props.onCommunitySelected}  />
         </InfoWindow>
 
       </CurrentLocation>
