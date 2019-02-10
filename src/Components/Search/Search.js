@@ -51,7 +51,7 @@ class Search extends Component {
     const { currentList } = this.state;
     return (
       <div className="Search">
-        <h1 className="title">Search crops</h1>
+        <h1 className="title_search">Search crops</h1>
         <textarea
           placeholder='Try typing "Tomato"!'
           className="TextArea"

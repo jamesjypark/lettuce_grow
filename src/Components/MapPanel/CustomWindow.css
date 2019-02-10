@@ -1,7 +1,7 @@
 @font-face {
     font-family: Avenir;
     src: url("../../Assets/avenir-lt-std-cufonfonts-webfont/AvenirLTStd-LightOblique.woff");
-  }
+}
 
 .custom_window {
     width: 350px;
@@ -14,15 +14,13 @@
 }
 
 .community {
-    padding-top: 5px;
     font-size: 20px;
     text-align: center;
-
 }
 
 .master {
-    padding: 20px;
     display: flex;  
+    padding: 15px;
 }
 
 .listitem {
