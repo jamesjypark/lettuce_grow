@@ -12,7 +12,6 @@ class Body extends Component {
       <div>
          <div className={this.props.content === "community" ? "" : "hidden"}>
            <Community />
-           <MapPanel />
          </div>
          <div className={this.props.content === "grow" ? "" : "hidden"}>
            <Grow />
