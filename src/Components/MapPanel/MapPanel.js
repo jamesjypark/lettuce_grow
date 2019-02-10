@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 import './mapPanel.css';
-import '.../Constants/apiKey.js';
+import API_KEY from '.../Constants/apiKey';
 
 const mapStyle = {
     width: '100%',
     height: '100%'
 };
 
-export class MapPanel extends Component {
+class MapPanel extends Component {
     render() {
         return (
             <div className='mapPanel'>
@@ -29,3 +29,6 @@ export class MapPanel extends Component {
 export default GoogleApiWrapper({
     apiKey: API_KEY
   })(MapPanel);
+
+
+  
