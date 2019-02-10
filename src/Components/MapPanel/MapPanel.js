@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 import './MapPanel.css';
-import '.../Constants/apiKey.js';
+import API_KEY from '.../Constants/apiKey.js';
 
 const mapStyle = {
     width: '100%',
