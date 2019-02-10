@@ -5,3 +5,11 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display:block;
+}

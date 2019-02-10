@@ -6,6 +6,12 @@ export const FAKE_CROPS = [
     name :  "Potato",
     progress : 0.7
   }, {
+    name :  "Spinach",
+    progress : 0.9
+  }, {
+    name :  "Broccoli",
+    progress : 0.3
+  }, {
     name :  "Green Onion",
     progress : 0.6
   }, {
