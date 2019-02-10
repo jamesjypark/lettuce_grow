@@ -1,3 +1,13 @@
 .textDecorHidden {
     text-decoration: none;
+    width: 40%;
+    height: 40%;
+}
+
+
+img {
+    max-width: 80%;
+    max-height: 80;
+    width: 15vw;
+    height: 20vh;
 }

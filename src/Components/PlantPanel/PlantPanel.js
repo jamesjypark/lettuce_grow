@@ -8,9 +8,9 @@ class PlantPanel extends Component {
   }
   render() {
     
-  const vegetable = ["Tomato", "Potato", "Brocolli", "Spanish"]
+  const vegetable = ["Tomato", "Potato", "Broccoli", "Spinach"]
     return (
-      <div>
+      <div className="parents">
         {vegetable.map(v=>(
           <PlantProfile vegetable={v}/>
         )
