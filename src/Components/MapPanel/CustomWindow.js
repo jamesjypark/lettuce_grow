@@ -14,7 +14,10 @@ export class CustomWindow extends Component {
 
     render() {
         return (<div className="custom_window">
-            <h2>{'"' + this.props.name + '"' + " Community"}</h2>
+            <div className="header">    
+                <button className="button"></button>
+                <p className="community">{'"' + this.props.name + '"' + " Community"}</p>
+            </div>
             {this.props.members && this.props.members.map(member => (
                     <div className="master">
                         {member.crops != null && <div className="circle" />}

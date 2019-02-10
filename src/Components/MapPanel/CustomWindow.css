@@ -5,9 +5,36 @@
 
 .custom_window {
     display: block;
-    width: 300px;
+    width: 350px;
     height: 250px;
     font-family: Avenir, Arial;
+}
+
+.header {
+    display: block;
+}
+
+.button {
+    background:url(../../Assets/plus_icon.png);
+    width: 32px;
+    height: 32px;
+    border: none;
+    float:right;
+    margin-block-start: 0px;
+    margin-right: 15px;
+}
+
+.button:hover {
+    border: 1px darkgray;
+}
+
+.community {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+
 }
 
 .master {
