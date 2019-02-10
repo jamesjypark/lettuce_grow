@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PlantProfile from '../PlantProfile/PlantProfile';
-import './PlantPanel.css';
+// import './PlantPanel.css';
 
 class PlantPanel extends Component {
   state = {

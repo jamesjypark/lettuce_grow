@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import './Map.css';
 
 const mapStyles = {
   map: {
@@ -94,10 +95,9 @@ export class CurrentLocation extends Component {
     }
 
     render() {
-        const style = Object.assign({}, mapStyles.map);
         return (
         <div>
-            <div style={style} ref = "map">
+            <div className="mapStyle" ref = "map">
                 Loading Map....
             </div>        
         </div>

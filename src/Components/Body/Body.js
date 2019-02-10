@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-
 import Community from "../Community/Community";
 import Grow from "../Grow/Grow";
 import Search from "../Search/Search";
-
-import "./Body.css";
+import "./Body.css"
 
 class Body extends Component {
   render() {
