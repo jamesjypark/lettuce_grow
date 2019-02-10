@@ -1,0 +1,39 @@
+.Landing {
+  height: 80vh;
+  width: 100%;
+  font-size: 65px;
+  background: white;
+  font-family: Avenir;
+  font-weight: bold;
+}
+
+.Subheader {
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 170px;
+  top: 300px;
+}
+
+.Contents {
+  text-align: left;
+  margin-left: 80px;
+  font-weight: heavy;
+  font-size: 23px;
+  width: 750px;
+  color: rgba(44, 123, 116, 1);
+  z-index: 100;
+}
+
+.gif {
+  position: absolute;
+  right: 200px;
+  top: 350px;
+  width: auto;
+  transform: scaleX(0.7);
+  transform: scale(3, 4.5);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: "../Assets/avenir-lt-std-cufonts-webfont";
+}

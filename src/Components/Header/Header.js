@@ -11,7 +11,12 @@ class Header extends Component {
     const { onHeaderSelected } = this.props;
     return (
       <div className="Header">
-        <div id="logo">
+        <div
+          id="logo"
+          onClick={() => {
+            onHeaderSelected("landing");
+          }}
+        >
           <div id="top">lettuce</div>
           <div id="bottom">grow</div>
         </div>
