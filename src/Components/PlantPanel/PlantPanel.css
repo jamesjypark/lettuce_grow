@@ -1,0 +1,15 @@
+.parents {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display:block;
+}
