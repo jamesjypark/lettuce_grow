@@ -44,6 +44,15 @@ class Header extends Component {
             }}
           />
         </div>
+
+        <div className="HeaderItem">
+          <HeaderButton
+            content="profile"
+            onClick={() => {
+              onHeaderSelected("UserProfile");
+            }}
+          />
+        </div>
       </div>
     );
   }

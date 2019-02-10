@@ -5,6 +5,8 @@ import Grow from "../Grow/Grow";
 import Search from "../Search/Search";
 import MapPanel from "../MapPanel/MapPanel";
 import Landing from "../Landing/Landing";
+import UserProfile from "../UserProfile/UserProfile";
+
 import "./Body.css";
 
 class Body extends Component {
@@ -23,6 +25,9 @@ class Body extends Component {
         </div>
         <div className={this.props.content === "search" ? "" : "hidden"}>
           <Search />
+        </div>
+        <div className={this.props.content === "UserProfile" ? "" : "hidden"}>
+          <UserProfile />
         </div>
       </div>
     );
