@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
-import './MapPanel.css'
+import { GoogleApiWrapper } from 'google-maps-react';
+import './mapPanel.css';
 import {API_KEY} from '../../Constants/apiKey';
-
-const mapStyle = {
-    width: '100%',
-    height: '75%'
-};
+import CurrentLocation from "./Map";
 
 export class MapPanel extends Component {
     render() {
         return (
-            <Map
-                google = {this.props.google}
-                zoom = {14}
-                style = {mapStyle}
-                initialCenter = {{
-                    lat: 49.2641577,
-                    lng: -123.2189405
-                }}
-                 />
-        );
+            <CurrentLocation
+                centerAroundCurrentLocation 
+                google = {this.props.google} />
+        )
     }
 }
 
